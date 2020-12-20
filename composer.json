@@ -1,0 +1,19 @@
+{
+    "name": "nucarf/php-thrift",
+    "description": "PHP Thrift, copy from https://github.com/apache/thrift/tree/master/lib/php",
+    "homepage": "http://gitlab.danke.life/open/php-thrift",
+    "type": "project",
+    "version": "0.11.0",
+    "authors": [
+        {
+            "name": "lihongwei",
+            "email": "lihongwei@nucarf.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Thrift\\": "src/Thrift"
+        }
+    },
+    "require": {}
+}
