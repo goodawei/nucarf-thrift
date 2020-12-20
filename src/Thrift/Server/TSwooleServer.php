@@ -33,7 +33,10 @@ class TSwooleServer extends TServer
         ];
         $setting = array_merge($default, $this->transport_->getSetting());
         $httpServer = new \swoole_http_server($setting['http_server_host'], $setting['http_server_port']);
-        $httpServer->set($setting);
+
+        //laravle cli 模式下 报错
+        //$httpServer->set($setting);
+
         //server status page
         $httpServer->on('request', function(\swoole_http_request $request, \swoole_http_response $response) use($httpServer){
             $status = $httpServer->stats();
